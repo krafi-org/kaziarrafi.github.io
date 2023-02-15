@@ -2,4 +2,5 @@
 
 backend https://gitlab.com/bloglab9/backend-of-kazi-ar-rafi.com
 
-live kaziarrafi.github.io
+live : krafi.xyz or  kaziarrafi.github.io
+in furue kazi-ar-rafi.com
