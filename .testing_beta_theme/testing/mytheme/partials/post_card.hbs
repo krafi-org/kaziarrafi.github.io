@@ -1,0 +1,100 @@
+<article class="card">
+  {{#if feature_image}}
+    <div class="card-image">
+<figure class="image is-4by4 ">
+<img src="{{feature_image}}" alt="{{title}}">
+</figure>
+</div>
+{{/if}}
+
+<div class="card-content">
+    {{#if primary_author.profile_image}}
+    <div class="media">
+      <div class="media-left">
+        <figure class="image is-48x48">
+          <img src="{{primary_author.profile_image}}" alt="{{primary_author.name}}">
+        </figure>
+         </div>
+       </div>
+       {{/if}}
+       <a class="title is-4" href="{{url}}">{{title}}</a>
+       <div class="content"> 
+        <p>
+          {{#if meta_description}}
+          {{meta_description}}
+        {{else}}
+        {{excerpt words="30"}}...
+        {{/if}}
+        </p>
+        <p>
+          {{primary_author}} in {{tags}} on 
+          <time>{{date}}</time>
+        </p>
+
+       </div>
+<!--
+     
+    <h1 class="title is-2">{{title}}</h1>
+    <div class="content">
+      {{{content}}}
+    </div>
+    -->
+
+</div>
+</article>
+
+
+<!--
+
+<div class="post-card">
+  {{#if feature_image}}
+    <div class="post-card-image">
+      <img src="{{img_url feature_image size='m'}}" alt="{{title}}">
+    </div>
+  {{/if}}
+
+  <div class="post-card-content">
+    <h2 class="post-card-title"><a href="{{url}}">{{title}}</a></h2>
+    <p class="post-card-excerpt">{{excerpt}}</p>
+    <a class="post-card-readmore" href="{{url}}">Read more</a>
+  </div>
+</div>
+
+
+
+
+<article class="post-card">
+  {{#if feature_image}}
+    <div class="post-card-image" style="background-image: url('{{img_url feature_image size="m"}}')"></div>
+  {{/if}}
+  <div class="post-card-content">
+    <h2 class="post-card-title">{{title}}</h2>
+    <div class="post-card-meta">
+      {{#if primary_author.name}}
+        <div class="post-card-author">
+          {{#if primary_author.profile_image}}
+            <img src="{{primary_author.profile_image}}" alt="{{primary_author.name}}" class="post-card-author-image">
+          {{/if}}
+          <span class="post-card-author-name">{{primary_author.name}}</span>
+        </div>
+      {{/if}}
+      <div class="post-card-date">{{date format="MMMM DD, YYYY"}}</div>
+    </div>
+    <div class="post-card-excerpt">{{excerpt words="25"}}</div>
+    <a href="{{url}}" class="post-card-read-more">Read More</a>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->

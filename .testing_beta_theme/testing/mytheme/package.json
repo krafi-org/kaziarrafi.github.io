@@ -1,0 +1,33 @@
+  {
+    "name": "my-ghost-theme",
+    "description": "A custom theme for the Ghost blogging platform",
+    "version": "1.0.0",
+    "license": "MIT",
+    "author": {
+      "name": "kazi ar rafi",
+      "email": "kazi-ar-rafi@protonmail.com"
+    },
+    "keywords": [
+      "ghost-theme"
+    ],
+    "engines": {
+      "ghost": ">=3.0.0"
+    },
+    "config": {
+      "posts_per_page": 2,
+      "image_sizes": {
+        "small": 300,
+        "medium": 600,
+        "large": 1200
+      },
+      "card_assets": true
+    },
+    "scripts": {
+      "start": "node index.js"
+    },
+    "dependencies": {
+      "handlebars": "^4.7.7",
+      "gulp": "^4.0.2"
+    }
+  }
+  

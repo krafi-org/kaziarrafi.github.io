@@ -1,0 +1,30 @@
+
+{{#if pagination.pages}}
+
+<nav class="pagination is-medium" role="navigation" aria-label="pagination">
+
+{{#if prev}}
+<a href="{{page_url prev}}" class="">← Previous Page</a>
+{{/if}}
+
+<span class="pagination-link is-current">Page {{page}} of {{pages}}</span>
+
+{{#if next}}
+<a href="{{page_url next}}" class="pagination-prev">Next Page →</a>
+{{/if}}
+</nav>
+
+
+{{/if}}
+
+<!--
+<nav class="pagination">
+    {{#if prev}}
+        <a class="newer-posts" href="{{page_url prev}}"><span aria-hidden="true">&larr;</span> Newer Posts</a>
+    {{/if}}
+    <span class="page-number">Page {{page}} of {{pages}}</span>
+    {{#if next}}
+        <a class="older-posts" href="{{page_url next}}">Older Posts <span aria-hidden="true">&rarr;</span></a>
+    {{/if}}
+</nav>
+-->

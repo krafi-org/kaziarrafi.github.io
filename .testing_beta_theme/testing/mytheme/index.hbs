@@ -1,0 +1,36 @@
+{{!< default}}
+
+
+<!--
+<style>
+ body {
+ 	margin: 0px;
+ }
+ 
+h1, h2{
+	text-align:center;
+}
+</style>
+
+-->
+
+<main class="container"> 
+<div class="columns is-multiline is-centered">
+
+
+{{#foreach posts}}
+<div class="column is-half">
+	 {{> post_card}}
+ </div>
+ <!--
+ 	 <h1> <a href="{{url}}">{{title}}</a></h1>
+ -->
+{{/foreach}}  
+</div>
+</main>
+
+<div class="container">
+	{{pagination}}
+	
+</div>
+    

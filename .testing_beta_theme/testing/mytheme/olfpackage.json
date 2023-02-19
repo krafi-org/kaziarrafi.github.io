@@ -1,0 +1,16 @@
+{
+"name": "paul-halliday",
+"description": "my discription",
+"version": "0.0.1",
+"engines":{
+"ghost": ">=1.0.0"
+
+},
+"author":{
+"name": "kazi ar rafi"
+"email": "kazi-ar-rafi@protonmail.com"
+},
+"config":{
+"postes_per_page": 3
+  }
+}
